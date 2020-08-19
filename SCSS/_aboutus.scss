@@ -1,0 +1,32 @@
+/*Variables*/
+$cool-black: #0b0b0b;
+$cool-black2: #797979;
+
+/*SCSS*/
+.slider{
+	margin: auto;
+	padding: 0px;
+
+}
+
+#imgaboutus{
+	padding:30px;
+}
+
+ .aboutustext{
+ 	padding: 100px 60px 0 60px;
+ }
+
+
+
+.aboutustext h1{
+	font-size:4rem;
+	font-weight: 400; 
+	margin-bottom: 40px;
+	color:$cool-black;
+}
+
+.aboutustext p{
+	color:$cool-black2;
+	line-height: 150%;
+}
