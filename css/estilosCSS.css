@@ -4,6 +4,23 @@
   padding-top: 6rem;
   margin-right: 3rem; }
 
+#slider {
+  position: relative; }
+
+#sliderText {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  left: 40%; }
+
+#sliderText h4 {
+  color: #FFF;
+  font-size: 8rem; }
+
+#sliderText p {
+  color: #FFF;
+  font-size: 2rem; }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -36,19 +53,34 @@ h1 {
   margin-bottom: 40px;
   color: #0b0b0b; }
 
-.aboutustext p {
-  color: #797979;
-  line-height: 150%; }
+#aboutus p {
+  text-align: center; }
+
+#aboutus a {
+  text-align: right;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: block;
+  font-size: 1rem;
+  color: #0b0b0b; }
+
+#aboutus {
+  width: 25%; }
+
+@media only screen and (max-width: 768px) {
+  .aboutustext {
+    padding: 20px 60px 40px 60px; } }
 
 .projects {
   display: grid;
   grid-template-rows: repeat(2, 386px);
   grid-template-columns: repeat(3, 420px);
-  grid-row-gap: 20px;
+  grid-row-gap: 60px;
   grid-column-gap: 20px;
   grid-template-areas: "img1 img2 img3" "img4 img2 img5";
   justify-content: center;
-  padding-bottom: 70px; }
+  padding-bottom: 200px; }
 
 #imgproject1 {
   grid-area: img1; }
@@ -64,6 +96,107 @@ h1 {
 
 #imgproject5 {
   grid-area: img5; }
+
+.projectContent {
+  padding-top: 10px; }
+
+.projects a {
+  color: #0b0b0b;
+  text-decoration: none;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease; }
+
+.projects a:hover {
+  color: #424242;
+  text-decoration: none; }
+
+.project-ef a img {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease; }
+
+.project-ef a img:hover {
+  opacity: 0.7; }
+
+/*
+.overlayproject{
+    display: inline-block;
+    content: ".";
+    text-indent: -200em;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    transition: opacity .33s linear;
+}
+.overlayproject:hover{
+    display: inline-block;
+    content: ".";
+    text-indent: -200em;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    background: rgba(0,0,0,.4);
+    opacity: 1;
+    transition: opacity .33s linear;
+}
+*/
+@media only screen and (max-width: 768px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 420px;
+    grid-template-rows: 386px 386px 789px 386px 386px;
+    grid-template-areas: "img1" "img3" "img2" "img4" "img5";
+    justify-content: center; } }
+
+@media only screen and (max-width: 450px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 420px;
+    grid-template-rows: 386px 386px 789px 386px 386px;
+    grid-template-areas: "img1" "img3" "img2" "img4" "img5";
+    justify-content: center; } }
+
+.project {
+  padding: 60px 60px 0 60px !important; }
+
+.project p {
+  color: #797979;
+  line-height: 150%; }
+
+.project h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #0b0b0b; }
+
+.projectblack {
+  background-color: white; }
+
+#proyectoacantilados {
+  padding-top: 30px; }
+
+#proyectocasa h2 {
+  color: #FFF; }
+
+#proyectocasa p {
+  color: #FFF; }
+
+.bordersectionp {
+  border-top: 1px solid #e9e9e9;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: center;
+  left: 15%; }
 
 #services {
   width: 100%;
@@ -86,19 +219,6 @@ h1 {
 .thumbnail {
   position: relative; }
 
-.caption {
-  position: absolute;
-  top: 35%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  padding: 40px; }
-
-.caption:hover {
-  background-color: white;
-  color: black; }
-
 .tittle {
   font-size: 3rem;
   font-weight: 400;
@@ -108,6 +228,85 @@ h1 {
   border-top: 1px solid #e9e9e9;
   text-transform: uppercase;
   text-align: center; }
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2;
+  -webkit-transition: background 0.4s ease;
+  -moz-transition: background 0.4s ease;
+  -o-transition: background 0.4s ease;
+  transition: background 0.4s ease; }
+
+.ourservices:hover .overlay {
+  background: rgba(0, 0, 0, 0.6); }
+
+.ourservices {
+  position: relative;
+  display: block;
+  float: left;
+  width: 33.3333%;
+  text-decoration: none; }
+
+.ourservices img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease; }
+
+.ourservices:hover img {
+  opacity: 0; }
+
+.ourservices:hover h3 {
+  color: black; }
+
+.ourservices:hover p {
+  color: black; }
+
+.ourServiceItemContent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.ourServiceItemContent h3 {
+  line-height: 28px;
+  margin-bottom: 22px;
+  padding: 0 20px;
+  color: #FFF;
+  font-size: 3rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease; }
+
+.ourServiceItemContent p {
+  line-height: 26px;
+  max-height: 78px;
+  padding: 0 50px;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease; }
 
 #contact {
   justify-content: center; }
@@ -121,12 +320,6 @@ h1 {
   border-top: 1px solid #e9e9e9;
   text-transform: uppercase;
   text-align: center; }
-
-footer {
-  background-color: #50505a;
-  padding: 100px 0 100px 0;
-  margin-top: 20px;
-  align-items: center; }
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
   font-size: 0.75em;
@@ -219,3 +412,14 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal; }
+
+footer {
+  background-color: #FFF;
+  padding: 40px 0 40px 0;
+  margin-top: 20px;
+  align-items: center;
+  border-top: 1px solid #e9e9e9; }
+
+footer a {
+  text-decoration: none;
+  color: #0b0b0b; }
