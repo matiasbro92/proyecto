@@ -15,34 +15,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  		<a class="navbar-brand" href="#"><img src="media/logo.jpg" class="img-fluid" width="150px" height="140px" alt="Logo Meraries"></a>
+  		<a class="navbar-brand" href="index.html"><img src="media/logo.jpg" class="img-fluid" width="150px" height="140px" alt="Logo Meraries"></a>
  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     	<span class="navbar-toggler-icon"></span>
   		</button>
   		<div class="collapse navbar-collapse" id="navbarNav">
     		<ul class="navbar-nav ml-auto">
       			<li class="nav-item active">
-       				 <a class="nav-link" href="#">Home <span class="sr-only">(current)
+       				 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)
        				 </span></a>
       			</li>
      			 <li class="nav-item">
-       				 <a class="nav-link" href="#aboutus">Nosotros</a>
+       				 <a class="nav-link" href="nosotros.html">Nosotros</a>
      			 </li>
       			 <li class="nav-item">
        				 <a class="nav-link" href="#services">Servicios</a>
      			 </li>
      			  <li class="nav-item">
-       				 <a class="nav-link" href="#projects">Proyectos</a>
+       				 <a class="nav-link" href="proyectos.html">Proyectos</a>
      			 </li>
      			 <li class="nav-item">
-       				 <a class="nav-link" href="#contact">Contactos</a>
+       				 <a class="nav-link" href="contacto.html">Contactos</a>
      			 </li>
       
    			</ul>
@@ -51,50 +51,41 @@
 
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
+
+  <div id="slider" class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="media/slider.jpg" alt="First slide">
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/slider2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="media/slider3.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+   <div id="sliderText" style="letter-spacing:0.5em;">
+
+	   	<h4> MERARIES </h4>
+	   	<p> DISEÑO DE INTERIORES </p>
+
+   </div> 
+    
+  
 </div>
 
 
 
 
+	<section class="container">
 
+			<p class="tittle">NOSOTROS</p>
+
+	</section>
+
+	<section class="container" id="aboutus"> 
 	
-
-	<section class="row" id="aboutus"> 
-	
-		<div class="col-md-6">
-			<img src="media/us.jpg" alt="Nosotros" class="img-fluid" id="imgaboutus">
-		</div>		
-
-
- 		<div class="col-md-6">
- 			<aside class="aboutustext">
+	 	<div class="col-md-12>">
+ 			<aside>
 		
-				<h1>NOSOTROS</h1>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestiae nisi quis quia porro odio temporibus at autem mollitia nulla corporis, totam dolor dolorem laborum, quisquam similique veniam vitae architecto.
-				<br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, pariatur dolore quos! Reprehenderit, omnis impedit saepe vitae blanditiis corrupti earum modi 
-			
 				</p>
+				<a href="nosotros.html">
+				VER MÁS	
+				</a>
 			</aside>
 		</div>
 
@@ -111,47 +102,57 @@
 	<section id="services" class="row">
 		<div class="row">
 
-  			<div class="col-sm-12 col-md-3 ">
+  			<div class="col-sm-12 col-md-3 ourservices">
 
-  				<img src="media/interior.jpg" class="img-fluid" alt="Diseño de interiores" >
+  				<img src="media/interior.jpg" class="img-fluid" alt="Diseño de interiores">
 
-				<div class="caption">
-						<h1>Diseño Interior</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe, delectus modi voluptate illo, enim distinctio esse? Eos illo.</p>
+  				<div class="overlay"> </div>
+
+				<div class="ourServiceItemContent" style="top:200px;">
+						<h3>Diseño de interiores</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>	
 
   			</div>
 			
-			<div class="col-sm-12 col-md-3">
-  		
-  				<img src="media/exterior.jpg"  class="img-fluid" alt="Diseño exteriores">
-			
-				<div class="caption"> <!-- clase para texto -->
-						<h1>Diseño Exterior</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe, delectus modi voluptate illo, enim distinctio esse? Eos illo.</p>
-				</div>	
+			<div class="col-sm-12 col-md-3 ourservices">
 
-  			</div>	
+  				<img src="media/exterior.jpg" class="img-fluid" alt="Diseño de interiores">
 
-  			<div class="col-sm-12 col-md-3">
-  		
-  				<img src="media/public.jpg"  class="img-fluid" alt="Diseño comercial">
-			
-				<div class="caption"> <!-- clase para texto -->
-						<h1>Diseño Comercial</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe, delectus modi voluptate illo, enim distinctio esse? Eos illo.</p>
+  				<div class="overlay"> </div>
+
+				<div class="ourServiceItemContent" style="top:200px;">
+						<h3>Diseño de exteriores</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 				</div>	
 
   			</div>
 
-  			<div class="col-sm-12 col-md-3">
-  		
-  				<img src="media/forniture.jpg"  class="img-fluid" alt="Diseño de muebles">
-			
-				<div class="caption"> <!-- clase para texto -->
-						<h1>Diseño de Muebles</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe, delectus modi voluptate illo, enim distinctio esse? Eos illo.</p>
+  			<div class="col-sm-12 col-md-3 ourservices">
+
+  				<img src="media/public.jpg" class="img-fluid" alt="Diseño de interiores">
+
+  				<div class="overlay"> </div>
+
+				<div class="ourServiceItemContent" style="top:200px;">
+						<h3>Diseño comercial</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>	
+
+  			</div>
+
+			<div class="col-sm-12 col-md-3 ourservices">
+
+  				<img src="media/forniture.jpg" class="img-fluid" alt="Diseño de interiores">
+
+  				<div class="overlay"> </div>
+
+				<div class="ourServiceItemContent" style="top:200px;">
+						<h3>Diseño de mobiliario</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>	
+
+  			</div>
 
   			</div>	
   			
@@ -167,119 +168,93 @@
 
 	</section>
 
-	<section id="projects" class="projects" class="border">
+	<section id="projects" class="projects">
 
-		<div id="imgproject1">
 
-			<img src="media/img1.jpg" class="img-fluid" alt="Proyecto 1" >
+	
 
+		<div id="imgproject1" class="project-ef">
+		<a href="proyectos.html">
+
+				<img src="media/img1.jpg" class="img-fluid" alt="Proyecto 1" >
+
+				<div class="projectContent">
+						<h3>Acantilados</h3>
+				</div>
+	</a>		
 		</div>
 		
-		<div id="imgproject2">
+		<div id="imgproject2" class="project-ef">
+		<a href="proyectos.html">	
+				<img src="media/img2.jpg" class="img-fluid" alt="Proyecto 2">
 
-			<img src="media/img2.jpg" class="img-fluid" alt="Proyecto 2">
 
+				<div class="projectContent">
+						<h3>Quincho</h3>
+				</div>
+		</a>		
 		</div>
 		
-		<div id="imgproject3">
-
+		<div id="imgproject3" class="project-ef">
+		<a href="proyectos.html">	
 			<img src="media/img3.jpg" class="img-fluid" alt="Proyecto 3">
 
-		 </div>
+			<div class="projectContent">
+						<h3>Departamento</h3>
+			</div>
+		</a>	
+		</div>	
 
-		<div id="imgproject4">
-			
+
+		<div id="imgproject4" class="project-ef">
+		<a href="proyectos.html">			
 			<img src="media/img4.jpg" class="img-fluid" alt="Proyecto 4">
 
+			<div class="projectContent">
+						<h3>Monoambiente</h3>
+			</div>
+		</a>
 		</div>
 		
-		<div id="imgproject5">
-
+		<div id="imgproject5" class="project-ef">
+		<a href="proyectos.html">	
 			<img src="media/img5.jpg" class="img-fluid" alt="Proyecto 5">
 
+			<div class="projectContent">
+						<h3>Almacen</h3>
+			</div>
+		</a>	
 		 </div>
 
 	</section>
+
+
 	
-	
-	<div id="contact" class="container  col-md-6">
-	
-		<p id="contactittle">CONTACTANOS</p>
+	<footer class="container-fluid fixed-bottom" align="center">
+		
+		<!--Facebook-->
+		<secion class="col-md-6">
 
-		<div class="row input-container ">
-			<div class="col-xs-12 col-sm-12">
-				<div class="styled-input wide">
-					<input type="text" required />
-					<label>Nombre</label> 
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input">
-					<input type="text" required />
-					<label>Email</label> 
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input" style="float:right;">
-					<input type="text" required />
-					<label>Telefono</label> 
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-12 ">
-				<div class="styled-input wide">
-					<textarea required></textarea>
-					<label>Dejanos tu mensaje</label>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-12">
-				<div class="btn-lrg submit-btn">Enviar</div>
-			</div>
-	</div>
-		</div>
+			<a href="https://facebook.com" class="fb-ic mr-4" role="button">
 
-	<!-- Footer -->
-<footer class="page-footer font-small cyan darken-3">
+				<i class="fab fa-lg fa-facebook-f fa-2x"></i>
 
-  <!-- Footer Elements -->
-  <div class="container">
+			</a>
 
-    <!-- Grid row-->
-    <div class="row">
+			<!--Twitter-->
+			<a href="https://facebook.com" class="tw-ic mr-4" role="button">
 
-      <!-- Grid column -->
-      <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
+				<i class="fab fa-lg fa-twitter fa-2x"></i>
 
-          <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-         
-          
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-         
-        </div>
-      </div>
-      <!-- Grid column -->
+			</a>
 
-    </div>
-    <!-- Grid row-->
+		</secion>
 
-  </div>
-  <!-- Footer Elements -->
-
-
-</footer>
-<!-- Footer -->
-
-
-
+	</footer>
 
 
 	<script src="js/jquery.js"></script>
+	<script src="js/galeria.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 
