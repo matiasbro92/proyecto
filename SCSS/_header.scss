@@ -4,3 +4,25 @@
     padding-top: 6rem;
     margin-right: 3rem;
 }
+
+#slider{
+	position:relative;
+}
+
+#sliderText{
+	position:absolute;
+	top:40%;
+	text-align:center;
+	left:40%;
+}
+
+#sliderText h4{
+	color:#FFF; 
+	font-size:8rem;
+}
+
+#sliderText p{
+	color:#FFF;
+	font-size:2rem;
+
+}

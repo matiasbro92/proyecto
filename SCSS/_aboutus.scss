@@ -11,6 +11,7 @@ $cool-black2: #797979;
 
 #imgaboutus{
 	padding:30px;
+
 }
 
  .aboutustext{
@@ -24,9 +25,29 @@ $cool-black2: #797979;
 	font-weight: 400; 
 	margin-bottom: 40px;
 	color:$cool-black;
+
 }
 
-.aboutustext p{
-	color:$cool-black2;
-	line-height: 150%;
+#aboutus p{
+	text-align:center;
+}
+
+#aboutus a{
+	text-align:right;
+	font-weight:bold;
+	padding-top:20px;
+	padding-bottom:50px;
+	display:block;
+	font-size:1rem;
+	color:$cool-black;
+}
+
+#aboutus{
+	width: 25%;
+}
+@media only screen and (max-width: 768px) { 
+	.aboutustext{
+ 	padding: 20px 60px 40px 60px;
+ }
+	
 }
