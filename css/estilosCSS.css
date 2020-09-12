@@ -21,6 +21,17 @@
   color: #FFF;
   font-size: 2rem; }
 
+@media only screen and (max-width: 450px) {
+  #sliderText {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    left: 20%; }
+  #sliderText h4 {
+    font-size: 4rem; }
+  #sliderText p {
+    font-size: 1rem; } }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -70,7 +81,13 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   .aboutustext {
-    padding: 20px 60px 40px 60px; } }
+    padding: 20px 60px 100px 60px; }
+  #aboutus {
+    width: 100%; } }
+
+@media only screen and (max-width: 450px) {
+  .aboutustext {
+    padding: 20px 60px 100px 60px; } }
 
 .projects {
   display: grid;
@@ -122,34 +139,6 @@ h1 {
 .project-ef a img:hover {
   opacity: 0.7; }
 
-/*
-.overlayproject{
-    display: inline-block;
-    content: ".";
-    text-indent: -200em;
-    left: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 50%;
-    background: rgba(0,0,0,.4);
-    opacity: 0;
-    transition: opacity .33s linear;
-}
-.overlayproject:hover{
-    display: inline-block;
-    content: ".";
-    text-indent: -200em;
-    left: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 50%;
-    background: rgba(0,0,0,.4);
-    opacity: 1;
-    transition: opacity .33s linear;
-}
-*/
 @media only screen and (max-width: 768px) {
   .projects {
     display: grid;
@@ -164,7 +153,10 @@ h1 {
     grid-template-columns: 420px;
     grid-template-rows: 386px 386px 789px 386px 386px;
     grid-template-areas: "img1" "img3" "img2" "img4" "img5";
-    justify-content: center; } }
+    justify-content: center; }
+  .projectContent {
+    padding-top: 10px;
+    padding-left: 40px; } }
 
 .project {
   padding: 60px 60px 0 60px !important; }
@@ -197,6 +189,10 @@ h1 {
   margin-bottom: 40px;
   justify-content: center;
   left: 15%; }
+
+.bordertopfinal {
+  padding-bottom: 50px;
+  margin-top: 40px; }
 
 #services {
   width: 100%;
@@ -308,6 +304,19 @@ h1 {
   -o-transition: color 0.4s ease;
   transition: color 0.4s ease; }
 
+#servicestext {
+  width: 25%;
+  padding: 50px 0 100px 0;
+  margin-bottom: 50px; }
+
+#servicestext p {
+  text-align: center;
+  color: #0b0b0b; }
+
+@media only screen and (max-width: 768px) {
+  #servicestext {
+    width: 100%; } }
+
 #contact {
   justify-content: center; }
 
@@ -338,6 +347,10 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 @media only screen and (max-width: 768px) {
   .styled-input {
     width: 100%; } }
+
+@media only screen and (max-width: 450px) {
+  #contact {
+    padding-bottom: 120px; } }
 
 .styled-input label {
   color: #999;
