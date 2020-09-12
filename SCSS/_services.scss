@@ -125,3 +125,19 @@
 }
 
 
+#servicestext{
+  width:25%;
+  padding: 50px 0 100px 0;
+  margin-bottom:50px;
+}
+
+#servicestext p{
+  text-align:center;
+  color:$cool-black;
+}
+
+@media only screen and (max-width: 768px) {
+#servicestext{
+  width:100%;
+}
+}

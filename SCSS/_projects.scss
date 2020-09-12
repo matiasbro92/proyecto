@@ -63,34 +63,6 @@
     opacity:0.7;
 }
 
-/*
-.overlayproject{
-    display: inline-block;
-    content: ".";
-    text-indent: -200em;
-    left: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 50%;
-    background: rgba(0,0,0,.4);
-    opacity: 0;
-    transition: opacity .33s linear;
-}
-.overlayproject:hover{
-    display: inline-block;
-    content: ".";
-    text-indent: -200em;
-    left: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 50%;
-    background: rgba(0,0,0,.4);
-    opacity: 1;
-    transition: opacity .33s linear;
-}
-*/
 
 @media only screen and (max-width: 768px) { 
 .projects{
@@ -120,6 +92,11 @@
     "img4"
     "img5";
     justify-content: center;
+}
+
+.projectContent{
+    padding-top:10px;
+    padding-left:40px;
 }
 
 }

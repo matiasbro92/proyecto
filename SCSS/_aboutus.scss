@@ -47,10 +47,19 @@ $cool-black2: #797979;
 }
 @media only screen and (max-width: 768px) { 
 	.aboutustext{
- 	padding: 20px 60px 40px 60px;
+ 	padding: 20px 60px 100px 60px;
  }
 	
 	#aboutus{
 	width: 100%;
 }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+.aboutustext{
+ 	padding: 20px 60px 100px 60px;
+ }
+
 }
